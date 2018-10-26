@@ -173,7 +173,7 @@ action_cf_mwl = cloudflare[cfuser="%(cfemail)s", cftoken="%(cfapikey)s"]
                 %(mta)s-whois-lines[name=%(__name__)s, sender="%(sender)s", dest="%(destemail)s", logpath=%(logpath)s, chain="%(chain)s"]
 
 # Report block via blocklist.de fail2ban reporting service API
-# 
+#
 # See the IMPORTANT note in action.d/blocklist_de.conf for when to
 # use this action. Create a file jail.d/blocklist_de.local containing
 # [Init]
@@ -321,7 +321,7 @@ logpath = /opt/openhab/logs/request.log
 port    = http,https
 logpath = %(nginx_error_log)s
 
-# To use 'nginx-limit-req' jail you should have `ngx_http_limit_req_module` 
+# To use 'nginx-limit-req' jail you should have `ngx_http_limit_req_module`
 # and define `limit_req` and `limit_req_zone` as described in nginx documentation
 # http://nginx.org/en/docs/http/ngx_http_limit_req_module.html
 # or for example see in 'config/filter.d/nginx-limit-req.conf'
@@ -849,11 +849,3 @@ logpath = /var/log/slapd.log
 port    = smtp,ssmtp
 filter  = domino-smtp
 logpath = /home/domino01/data/IBM_TECHNICAL_SUPPORT/console.log
-kerrj@chipotle ~> fail2ban-client status
-ERROR  Failed to access socket path: /var/run/fail2ban/fail2ban.sock. Is fail2ban running?
-kerrj@chipotle ~> fail2ban-client start
-ERROR  Directory /var/run/fail2ban exists but not accessible for writing
-kerrj@chipotle ~> sudo fail2ban-client start
-[sudo] password for kerrj: 
-2018-10-26 11:42:53,239 fail2ban.server         [14801]: INFO    Starting Fail2ban v0.9.7
-2018-10-26 11:42:53,239 fail2ban.server         [14801]: INFO    Starting in daemon mode
