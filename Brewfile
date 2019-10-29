@@ -11,7 +11,6 @@ mas "Xcode", id: 497799835
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Slack", id: 803453959
-mas "Fantastical", id: 435003921
 mas "Instapaper Save", id: 1481302432
 mas "PCalc", id: 403504866
 mas "Spark", id: 1176895641
@@ -32,6 +31,7 @@ cask "bartender"
 cask "bettertouchtool"
 cask "google-chrome"
 cask "google-drive-file-stream"
+cask "fantastical"
 cask "istat-menus"
 cask "keyboard-maestro"
 cask "microsoft-office"
