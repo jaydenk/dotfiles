@@ -22,7 +22,6 @@ mas "1Blocker", id: 1365531024
 mas "Things", id: 904280696
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "OneDrive", id: 823766827
-mas "Reeder", id: 880001334
 mas "macOS Server", id: 883878097
 mas "Apple Remote Desktop", id: 409907375
 
