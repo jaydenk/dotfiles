@@ -22,12 +22,12 @@ mas "1Blocker", id: 1365531024
 mas "Things", id: 904280696
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "OneDrive", id: 823766827
-mas "macOS Server", id: 883878097
 mas "Apple Remote Desktop", id: 409907375
 
 cask "1Password"
 cask "aerial"
 cask "alfred"
+cask "bbedit"
 cask "bartender"
 cask "bettertouchtool"
 cask "docker"
@@ -40,7 +40,6 @@ cask "microsoft-office"
 cask "nova"
 cask "rocket"
 cask "spotify"
-cask "wireshark"
 
 
 brew "python"
@@ -58,5 +57,4 @@ brew "ssh-copy-id"
 brew "tmux"
 brew "tree"
 brew "vim"
-brew "wireshark", link: false
 brew "youtube-dl"
