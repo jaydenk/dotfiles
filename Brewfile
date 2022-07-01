@@ -39,6 +39,7 @@ cask "keyboard-maestro"
 cask "microsoft-office"
 cask "nova"
 cask "rocket"
+cask "screens"
 cask "spotify"
 
 
