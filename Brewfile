@@ -23,6 +23,7 @@ mas "Things", id: 904280696
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "OneDrive", id: 823766827
 mas "Apple Remote Desktop", id: 409907375
+mas "Timery for Toggl", id: 1425368544
 
 cask "1Password"
 cask "aerial"
@@ -30,6 +31,7 @@ cask "alfred"
 cask "bbedit"
 cask "bartender"
 cask "bettertouchtool"
+cask "discord"
 cask "docker"
 cask "google-chrome"
 cask "google-drive-file-stream"
