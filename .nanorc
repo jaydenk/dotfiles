@@ -1,0 +1,20 @@
+# Syntax Highlight macOS
+include "/opt/homebrew/Cellar/nano/*/share/nano/*.nanorc"
+
+# Display & UI
+set linenumbers
+set mouse
+set constantshow
+set titlecolor     brightwhite,black
+set statuscolor    brightwhite,black
+set numbercolor    cyan
+set keycolor       brightcyan
+set functioncolor  brightgreen
+
+# Editing Behaviour
+set tabsize 4
+set tabstospaces
+set autoindent
+set softwrap
+set trimblanks
+
