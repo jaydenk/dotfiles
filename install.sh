@@ -27,9 +27,22 @@ echo "Installing dotfiles from $DOTFILES"
 echo "Detected OS: $OS"
 echo ""
 
-# nano
+# nano — generate ~/.nanorc with platform-specific syntax include
 echo "[nano]"
-link "$DOTFILES/nanorc" "$HOME/.nanorc"
+{
+    if [ "$OS" = "Darwin" ]; then
+        if [ -d /opt/homebrew ]; then
+            echo 'include "/opt/homebrew/Cellar/nano/*/share/nano/*.nanorc"'
+        else
+            echo 'include "/usr/local/Cellar/nano/*/share/nano/*.nanorc"'
+        fi
+    else
+        echo 'include "/usr/share/nano/*.nanorc"'
+    fi
+    echo ""
+    cat "$DOTFILES/nanorc"
+} > "$HOME/.nanorc"
+echo "  Generated ~/.nanorc ($([ "$OS" = "Darwin" ] && echo "macOS" || echo "Linux") syntax paths + shared settings)"
 
 # tmux
 echo "[tmux]"
