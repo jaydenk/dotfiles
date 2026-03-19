@@ -29,6 +29,12 @@ echo ""
 
 # nano — generate ~/.nanorc with platform-specific syntax include
 echo "[nano]"
+if [ -L "$HOME/.nanorc" ]; then
+    rm "$HOME/.nanorc"
+elif [ -e "$HOME/.nanorc" ]; then
+    mv "$HOME/.nanorc" "$HOME/.nanorc.bak"
+    echo "  Backed up existing ~/.nanorc to ~/.nanorc.bak"
+fi
 {
     if [ "$OS" = "Darwin" ]; then
         if [ -d /opt/homebrew ]; then
